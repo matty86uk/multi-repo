@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+   mat.mat.mat.multirepo.MultiRepositoryAnnotationConfiguration, \
+   mat.mat.mat.multirepo.MultiRepositoryConfiguration

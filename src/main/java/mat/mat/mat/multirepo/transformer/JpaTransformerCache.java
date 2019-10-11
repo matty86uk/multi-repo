@@ -1,13 +1,9 @@
-package mat.mat.mat.multirepo.annotation;
-
-import mat.mat.mat.multirepo.transformer.JpaTransformer;
-import org.springframework.stereotype.Component;
+package mat.mat.mat.multirepo.transformer;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-@Component
 public class JpaTransformerCache {
 
     private final Map<ClassToClass, JpaTransformer> jpaTransformerCache = new HashMap<>();

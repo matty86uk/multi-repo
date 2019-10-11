@@ -1,7 +1,8 @@
-package mat.mat.mat.multirepo.annotation;
+package mat.mat.mat.multirepo.proxy;
 
 import lombok.RequiredArgsConstructor;
 import mat.mat.mat.multirepo.transformer.JpaTransformer;
+import mat.mat.mat.multirepo.transformer.JpaTransformerCache;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.lang.reflect.*;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RequiredArgsConstructor
-public class NPersistInvocationHandler implements InvocationHandler {
+public class MultiRepositoryProxy implements InvocationHandler {
 
     private static List<String> readMethods = Arrays.asList("get", "find");
 
